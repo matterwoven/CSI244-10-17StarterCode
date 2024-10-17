@@ -41,6 +41,8 @@ function DrawerNavigator() {
           key={category.id}
           name={category.title}
           component={MealListScreen}
+          //passed some params (props)
+          //I can access these params from meal list screen
           initialParams={{ categoryId: category.id }}
         />
       ))}
